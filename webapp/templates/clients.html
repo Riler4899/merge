@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+    {% for client in clients %}
+        {{ client.name }} <br>
+        {{ client.company }} <br>
+        {{ client.address }} <br>
+        {{ client.contact_no }} <br>
+        {{ client.email }} <br>
+        {{ client.client_type }} <br>
+        <hr>
+    {% endfor %}
+{% endblock %}

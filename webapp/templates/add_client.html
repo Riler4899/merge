@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.name.label }}
+            {{ form.name }}
+        </div>
+        <div>
+            {{ form.company.label }}
+            {{ form.company }}
+        </div>
+        <div>
+            {{ form.address.label }}
+            {{ form.address }}
+        </div>
+        <div>
+            {{ form.contact_no.label }}
+            {{ form.contact_no }}
+        </div>
+        <div>
+            {{ form.email.label }}
+            {{ form.email }}
+        </div>
+        <div>
+            {{ form.client_type.label }}
+            {{ form.client_type }}
+        </div>
+        <div class="form-group">
+            {{ form.submit }}
+        </div>
+    </form>
+{% endblock %}
