@@ -1,0 +1,65 @@
+
+/*CSS for Sidebar */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: :border-box;
+	text-decoration: none;
+	list-style-type: none;
+	
+}
+body{
+	background-color: grey;
+}
+.wrapper{
+	display: flex;
+	position: relative;
+}
+.wrapper .sidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	padding: 30px 0;
+}
+.wrapper .sidebar h2{
+	color: #fff;
+	text-transform:uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.wrapper .sidebar ul li{
+	padding: 0;
+	}
+.wrapper .sidebar ul li a{
+	color:white;
+	display: block;
+	padding-left:  15px;
+	padding-bottom: 10px; 
+}
+
+.wrapper .sidebar ul li:hover {
+	background-color: #fff;
+
+}
+.wrapper .sidebar ul li:hover a {
+	color: #fff;
+
+}
+.wrapper .main{
+	width: 100%;
+	margin-left: 200px;
+	margin-top: 88px;
+	color:white;
+}
+.theader{
+	border-bottom: 3px white solid;
+	margin-bottom: 3px;
+}
+.tableEntry{
+	border-bottom: 1px white solid;
+	margin-bottom: 5px;
+}
+.tableBase{
+	border-spacing: 10px;
+	border-collapse: collapse; 
+}

@@ -1,0 +1,43 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+	Login
+{% endblock %}
+
+{% block styles %}
+	{{super()}}
+	<style type="text/css">
+		body{
+			background-color: grey;
+			color: white;
+		}
+	.log-wrapper{
+		position: fixed;
+  		top: 50%;
+		left: 50%;
+  		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	.form-group.required{
+		text-align: start;
+	}
+	</style>
+{% endblock %}
+
+{% block content %}
+<div class = "log-wrapper">
+	
+	
+	<form class="form-signin" method="POST" action="/">
+		<h1 class = "form-signin-heading">Welcome</h1>
+		{{ form.hidden_tag() }}
+		{{ wtf.form_field(form.username) }}
+		{{ wtf.form_field(form.password) }}
+		<button type="submit" class="btn btn-primary">Log in</button>
+	</form>
+	
+</div>
+{% endblock %}
+
+	

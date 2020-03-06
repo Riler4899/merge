@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+
+
+	
+{%block extraside%}
+</br>
+<li>
+	<a href="/addcase">Add Case</a>
+</li>
+
+<li>
+	<a href="/editcase">Edit Case</a>
+</li>
+{%endblock%}
+	
+
+{%block inners%}
+<h3>Add Case</h3>
+{{ wtf.quick_form(cform) }}
+{{wtf.quick_form(rform)}}
+{%endblock%}

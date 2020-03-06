@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+
+
+
+	
+{%block extraside%}
+</br>
+<li>
+	<a href="/addcase">Add Case</a>
+</li>
+
+<li>
+	<a href="/editcase">Edit Case</a>
+</li>
+{%endblock%}
+	
+
+
+{%block inners%}
+		Cases
+		<table style="padding-left: 10px;" class="casesTable">
+			<tr class = "theader">
+				<th>RF</th>
+				<th>Date</th>
+				<th>Name</th>
+				<th>Status</th>
+				<th>RF</th>
+				<th>Inquiry/Request Detail</th>
+			</tr>
+
+			<tr class = "tableEntry">
+				<td>RF</td>
+				<td>Date</td>
+				<td>Name</td>
+				<td>Status</td>
+				<td>RF</td>
+				<td>Inquiry/Request Detail</td>
+			</tr>
+		
+		</table>
+{% endblock %}

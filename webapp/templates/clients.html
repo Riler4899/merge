@@ -1,12 +1,22 @@
-{% extends "layout.html" %}
-{% block body %}
-    {% for client in clients %}
-        {{ client.name }} <br>
-        {{ client.company }} <br>
-        {{ client.address }} <br>
-        {{ client.contact_no }} <br>
-        {{ client.email }} <br>
-        {{ client.client_type }} <br>
-        <hr>
-    {% endfor %}
+{% extends 'base.html'%}
+
+{%block inners%}
+	
+		Clients
+		<table style="padding-left: 10px;">
+			<tr>
+				
+				
+				<th>Name</th>
+				<th>Institution</th>
+			</tr>
+
+			<tr class = "tableEntry">
+				<td>Name</td>
+				<td>Institution</td>
+				
+			</tr>
+		
+		</table>
+	
 {% endblock %}

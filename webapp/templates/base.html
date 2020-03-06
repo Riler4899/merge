@@ -1,0 +1,46 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+	{{title}}
+{% endblock %}
+{% block styles %}
+	{{super()}}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+{% endblock %}
+
+
+
+
+{% block navbar %}
+	<div class = "wrapper">
+		<div class="sidebar">
+		<h2>DMMME</h2>
+		<ul>
+			<li>
+				<a href="/cases">Cases</a>
+			</li>
+			<li>
+				<a href="/clients">Clients</a>
+			</li>
+			<li>
+				<a href="/schedule">Schedule</a>
+			</li>
+			<li>
+				<a href="/accounts">Accounts</a>
+			</li>
+			{%block extraside%}
+
+			{%endblock%}
+
+		
+		</ul>
+		</div>
+{%endblock%}
+{% block content %}
+	<div class="main">
+	{%block inners%}
+
+	{%endblock%}
+	</div>
+{%endblock%}
